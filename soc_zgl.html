@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta name = "format-detection" content="telephone=no" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link href="css/jquery.counter-analog.css" media="screen" rel="stylesheet" type="text/css" />    
+    <link href="css/forms.css" media="screen" rel="stylesheet" type="text/css" />
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/interface.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery.reveal.js"></script>
+	
+	<!--[if lt IE 9]> 
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+	<![endif]-->
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" href="css/ie.css" />
+	<![endif]-->
+	
+</head>
+
+<body>
+	<section class="page zagl">
+		<div class="zagl-main">
+			<div class="counter-block">
+				<ins>До запуска проекта осталось</ins>
+				<span class="counter counter-analog" data-direction="down" data-interval="1000" data-format="99" data-stop="0">60</span>
+				<ins>дней</ins>
+			</div>
+			<div class="zagl-right">
+				<div class="select">
+					<a href="#" class="slct">Русский</a>
+					<ul class="drop">
+						<li>Русский</li>
+						<li>Албанскый</li>
+						<li>English</li>
+					</ul>
+					<input type="hidden" id="select" />
+				</div>
+				<a href="#dialog1" name="modal">Вход для фокус группы</a>
+				<div id="dialog1" class="window">				
+					<a href="#"class="close"></a>
+					<form>
+						<input type="submit" value="Вход для фокус группы">
+						<input type="text" placeholder="E-mail">
+						<input type="text" placeholder="Пароль">
+					</form>
+				</div>			
+			</div>
+			<div class="zagl-center">
+				<form class="zagl-searchblock">
+					<input type="text" name="" placeholder="Напишите свой e-mail и мы сообщим Вам о запуске проекта">
+					<a href="#">Ждем открытия</a>
+				</form>
+				<div class="zagl-center-bottom">
+					<div class="zagl-center-left">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui.  Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.</p>
+					</div>
+					<div class="zagl-center-right">
+						<p>Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.</p>
+					</div>
+				</div>
+			</div>	
+		</div>			
+	<div class="hfooter"></div>
+	</section>
+	<footer class="footer">
+		<div class="footer-ins">
+			<span class="copy">Copyright petbook.com 2014</span>
+			<a href="#" class="footer-feedback-link" data-reveal-id="myModal1" data-animation="fade"><ins>Обратная связь</ins></a>			
+		</div>	
+		</div>	
+	</footer>
+	<div id="myModal1" class="reveal-modal">
+		<div class="myModal1-top">
+			<h2>Обратная связь</h2>
+			<a class="close-reveal-modal"></a>
+		</div>
+		<form class="myModal1-bottom">
+			<input type="text" placeholder="Имя">
+			<input type="text" placeholder="E-mail">
+			<input class="myModal1-bottom-exclude" type="text" placeholder="Тема:">
+			<textarea placeholder="Текст письма"></textarea>
+			<input type="submit" value="Отправить письмо">
+		</form>		
+	</div>			
+	<script src="js/jquery.counter.js"></script>
+	<script>
+        $('.counter').counter({});
+    </script>    
+</body>
+</html>
