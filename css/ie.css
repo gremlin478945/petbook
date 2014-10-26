@@ -1,0 +1,6 @@
+.page {zoom: 1;}
+html {//filter: expression(runtimeStyle.filter = '',document.execCommand('BackgroundImageCache', false, true));}
+a * {cursor: pointer;}
+.active-tab a span{
+					padding: 0 5px;
+				}
