@@ -1,0 +1,1069 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>User_page</title>
+	<meta charset="utf-8" />
+	<meta name = "format-detection" content="telephone=no" />
+	<meta name="description" content="" />
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/interface.js"></script>
+	<script src="js/script.js"></script>
+
+	<script src="js/jquery.mousewheel.js"></script>
+	<script src="js/jquery.jscrollpane.js"></script>
+	<script src="js/jquery.reveal.js"></script>
+	<script src="js/jquery.orbit-1.2.3.js"></script>
+	<script src="js/jquery.raty.js"></script>
+	<script src="js/tabs_click-to-activate.js"></script>
+	<!--[if lt IE 9]> 
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+	<![endif]-->
+	<!--[if lte IE 7]>
+		<link rel="stylesheet" href="css/ie.css" />
+	<![endif]-->
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('.featured').orbit({
+			bullets:true,
+            bulletThumbs: true,
+            bulletThumbLocation: 'i/min/'
+			});
+		});
+	</script>
+	<script>
+	$(function() {
+		$('.stars-rate').raty({
+			scoreName	: 'entity.score',
+			number		: 5
+		});
+	});
+	</script>
+	<script type="text/javascript">
+        $(function(){
+			$('.scroll-pane').jScrollPane({autoReinitialise: true,autoReinitialiseDelay:1});
+			$('.scroll-pane2').jScrollPane({scrollbarOnLeft:true,autoReinitialise: true,autoReinitialiseDelay:1});
+		});
+    </script>   
+</head>
+
+<body>
+	<section class="page">
+		<header class="header">
+			<div class="header-ins">
+				<a href="#" class="logo">petbook</a>
+				<div class="header-searchblock-out">
+					<div class="header-searchblock focus">
+						<input type="text" placeholder="Поиск" name="">
+						<a href="#"></a>	
+					</div>
+					<ul class="hid">
+						<li><a href="#">Собака</a></li>
+						<li><a href="#">Кот</a></li>
+						<li><a href="#">Хомяк</a></li>
+						<li><a href="#">Мышь</a></li>
+						<li class="hid-last"><a href="#">Смотреть все<span>114</span></a></li>
+					</ul>
+				</div>
+				<ul class="header-right">
+					<li><a href="#"><ins>Сообщения</ins><span>12</span></a></li>
+					<li><a href="#"><ins>Друзья</ins><span>6</span></a></li>
+					<li class="user-pic"><a href="#">Профиль</a><span><img src="i/user-pic.jpg"></span></li>
+				</ul>	
+			</div>			
+		</header>
+		<div class="under-header">
+			<div class="under-header-ins user-exclude1">
+				<ul class="under-header-ins-left">
+					<li><a href="#">ПИТОМЦЫ</a></li>
+					<li class="under-header-ins-left-active">
+						<a href="#">ВЛАДЕЛЬЦЫ</a>
+						<ul>
+							<li><a href="#">Любители</a></li>
+							<li><a href="#">Заводчики</a></li>
+							<li><a href="#">Разводчики</a></li>
+						</ul>
+					</li>
+					<li><a href="#">СОБЫТИЯ</a></li>
+					<li><a href="#">УСЛУГИ</a></li>
+				</ul>				
+			</div>
+		</div>
+		<div class="user-block-top">
+			<div class="user-block-top-ins">
+				<span class="user-block-top-ins-left">
+					<img src="i/user-big.jpg">
+				</span>
+				<div class="user-block-top-ins-center">
+					<div class="user-block-top-ins-center-left">
+						<h2>Иванов Иван Иванович</h2>
+						<h3>Россия, Санкт-Петербург</h3>
+					</div>
+					<div class="user-block-top-cloud">Продаю Жирафа Федю</div>
+					<div class="user-block-top-ins-center-bottom">
+						<h3>Питомцы Ивана:</h3>
+						<a href="#">все питомцы</a>
+						<ul>
+							<li>
+								<dl>
+									<dt><img src="i/monkey.jpg"></dt>
+									<dd><a href="#">Генадий</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><img src="i/monkey.jpg"></dt>
+									<dd><a href="#">Генадий</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><img src="i/monkey.jpg"></dt>
+									<dd><a href="#">Генадий</a></dd>
+								</dl>
+							</li>
+							<li>
+								<dl>
+									<dt><img src="i/monkey.jpg"></dt>
+									<dd><a href="#">Генадий</a></dd>
+								</dl>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="user-block-top-ins-right">
+					<a href="#" data-reveal-id="myModal2" data-animation="fade">Добавить в друзья</a>
+					<a href="#" data-reveal-id="myModal3" data-animation="fade">Написать сообщение</a>
+				</div>
+				<div id="myModal2" class="reveal-modal">
+					<div class="myModal2-left">
+						<div class="featured"> 
+							<img src="i/example61.jpg" data-thumb="example62.jpg"/>
+							<img src="i/example71.jpg" data-thumb="example72.jpg"/>
+							<img src="i/example61.jpg" data-thumb="example62.jpg"/>
+							<img src="i/example71.jpg" data-thumb="example72.jpg"/>
+							<img src="i/example61.jpg" data-thumb="example62.jpg"/>
+							<img src="i/example71.jpg" data-thumb="example72.jpg"/>
+							<img src="i/example61.jpg" data-thumb="example62.jpg"/>
+						</div>
+						<div class="popup-rating">
+							<div class="stars-rate"></div>
+							<a href="#">голосовать</a>
+							<span>фото 6 из 14</span>
+						</div>			
+					</div>
+					<div class="myModal2-right">
+						<div class="myModal2-right-top">
+							<a class="close-reveal-modal"></a>
+							<dl>
+								<dt>
+									<a href="#"><img src="i/example8.jpg"></a>
+								</dt>
+								<dd>
+									<a href="#">Алена Соколова</a><br>
+									<ins>Альбом:</ins><a href="#">Мой кот Мурзик</a>
+								</dd>
+							</dl>
+							<span>46</span>
+						</div>
+						<div class="myModal2-right-middle scroll-pane">
+							<div class="event-block-hidden-top scroll-pane">
+									<ul>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+						</div>
+						<div class="myModal2-right-bottom">
+							<form>
+								<textarea placeholder="Здесь вы можете оставить свой комментарий"></textarea>
+								<input type="submit" value="Отправить">
+							</form>
+						</div>
+					</div>	
+				</div>
+				<div id="myModal3" class="reveal-modal">
+					<a class="close-reveal-modal"></a>
+					<div class="section">
+						<ul class="tabs">
+							<li class="current"><ins>Все</ins><span>22</span></li>
+							<li><ins>Непрочитанные</ins><span>1</span></li>
+							<li><ins>On-line</ins><span>44</span></li>
+							<li><ins>Переписка</ins><span>15</span></li>
+						</ul>
+						<div class="box visible">
+							<div class="box-left">
+								<div class="box-left-top">
+									<form>
+										<input type="text" placeholder="Поиск по сообщениям" name="">
+										<a href="#"></a>	
+									</form>
+								</div>
+								<div class="box-left-bottom scroll-pane2">
+									<ul>
+										<li>
+											<a href="#">
+												<dl>
+													<dt>
+														<img src="i/example9.jpg">
+													</dt>
+													<dd>
+														<b>Иванов Иван Иванович</b>
+														<span>Россия, Санкт-Петербург</span>
+														<ins>был на сайте 4 дня назад</ins>
+													</dd>
+												</dl>
+											</a>
+										</li>
+										<li>
+											<a class="popup-left-active-bt" href="#">
+												<dl>
+													<dt>
+														<img src="i/example9.jpg">
+													</dt>
+													<dd>
+														<b>Иванов Иван Иванович</b>
+														<span>Россия, Санкт-Петербург</span>
+														<ins>был на сайте 4 дня назад</ins>
+													</dd>
+												</dl>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="bonus-bt">+2</span>
+												<dl>
+													<dt>
+														<img src="i/example9.jpg">
+													</dt>
+													<dd>
+														<b>Иванов Иван Иванович</b>
+														<span>Россия, Санкт-Петербург</span>
+														<ins>был на сайте 4 дня назад</ins>
+													</dd>
+												</dl>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<dl>
+													<dt>
+														<img src="i/example9.jpg">
+													</dt>
+													<dd>
+														<b>Иванов Иван Иванович</b>
+														<span>Россия, Санкт-Петербург</span>
+														<ins>был на сайте 4 дня назад</ins>
+													</dd>
+												</dl>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<dl>
+													<dt>
+														<img src="i/example9.jpg">
+													</dt>
+													<dd>
+														<b>Иванов Иван Иванович</b>
+														<span>Россия, Санкт-Петербург</span>
+														<ins>был на сайте 4 дня назад</ins>
+													</dd>
+												</dl>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<dl>
+													<dt>
+														<img src="i/example9.jpg">
+													</dt>
+													<dd>
+														<b>Иванов Иван Иванович</b>
+														<span>Россия, Санкт-Петербург</span>
+														<ins>был на сайте 4 дня назад</ins>
+													</dd>
+												</dl>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<dl>
+													<dt>
+														<img src="i/example9.jpg">
+													</dt>
+													<dd>
+														<b>Иванов Иван Иванович</b>
+														<span>Россия, Санкт-Петербург</span>
+														<ins>был на сайте 4 дня назад</ins>
+													</dd>
+												</dl>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="box-right">
+								<div class="box-right-top scroll-pane">	  
+									<ul>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li class="popup-answer-right">
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<span>14:46</span>
+												<span>04.06.14</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li class="popup-answer-right">
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<span>14:46</span>
+												<span>04.06.14</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li class="popup-answer-right">
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<span>14:46</span>
+												<span>04.06.14</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li class="popup-answer-right">
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<span>14:46</span>
+												<span>04.06.14</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="box-right-bottom">
+									<form>
+										<textarea placeholder="Здесь вы можете написать текст вашего сообщения"></textarea>
+										<div class="box-right-bottom-bt">
+											<input type="submit" value="Отправить">
+											<span>Alt+Enter</span>
+										</div>
+									</form>
+									<dl>
+										<dt>
+											<a href="#"><img src="i/example9.jpg"></a>
+										</dt>
+										<dd><a href="#">Профиль</a></dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							<div class="box-left">
+								<div class="box-left-top">
+									<form>
+										<input type="text" placeholder="Поиск по сообщениям" name="">
+										<a href="#"></a>	
+									</form>
+								</div>
+								<div class="box-left-bottom scroll-pane2">
+									<ul>						
+										<li>
+											<a href="#">
+												<dl>
+													<dt>
+														<img src="i/example9.jpg">
+													</dt>
+													<dd>
+														<b>Иванов Иван Иванович</b>
+														<span>Россия, Санкт-Петербург</span>
+														<ins>был на сайте 4 дня назад</ins>
+													</dd>
+												</dl>
+											</a>
+										</li>
+										<li>				
+											<a href="#">
+											<span class="bonus-bt">+34</span>
+												<dl>
+													<dt>
+														<img src="i/example9.jpg">
+													</dt>
+													<dd>
+														<b>Иванов Иван Иванович</b>
+														<span>Россия, Санкт-Петербург</span>
+														<ins>был на сайте 4 дня назад</ins>
+													</dd>
+												</dl>
+											</a>
+										</li>
+										<li>
+											<a href="#" class="popup-left-active-bt">
+												<dl>
+													<dt>
+														<img src="i/example9.jpg">
+													</dt>
+													<dd>
+														<b>Иванов Иван Иванович</b>
+														<span>Россия, Санкт-Петербург</span>
+														<ins>был на сайте 4 дня назад</ins>
+													</dd>
+												</dl>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<dl>
+													<dt>
+														<img src="i/example9.jpg">
+													</dt>
+													<dd>
+														<b>Иванов Иван Иванович</b>
+														<span>Россия, Санкт-Петербург</span>
+														<ins>был на сайте 4 дня назад</ins>
+													</dd>
+												</dl>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="box-right">
+								<div class="box-right-top scroll-pane">	  
+									<ul>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li class="popup-answer-right">
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<span>14:46</span>
+												<span>04.06.14</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li class="popup-answer-right">
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<span>14:46</span>
+												<span>04.06.14</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li class="popup-answer-right">
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<span>14:46</span>
+												<span>04.06.14</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li class="popup-answer-right">
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<span>14:46</span>
+												<span>04.06.14</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="box-right-bottom">
+									<form>
+										<textarea placeholder="Здесь вы можете написать текст вашего сообщения"></textarea>
+										<div class="box-right-bottom-bt">
+											<input type="submit" value="Отправить">
+											<span>Alt+Enter</span>
+										</div>
+									</form>
+									<dl>
+										<dt>
+											<a href="#"><img src="i/example9.jpg"></a>
+										</dt>
+										<dd><a href="#">Профиль</a></dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="box">
+							
+						</div>
+						<div class="box">
+							
+						</div>
+					</div>
+				</div>		
+				<div class="user-block-top-ins-bottom">
+					<ul>
+						<li class="active-bt2"><a href="#">Хроника</a></li>
+						<li><a href="#">Информация</a></li>
+						<li><a href="#">Галерея<span>(67)</span></a></li>
+						<li><a href="#">Друзья<span>(145)</span></a></li>
+						<li><a href="#">Любимчики<span>(15)</span></a></li>
+						<li><a href="#">Заметки<span>(2)</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<section class="center">
+			<div class="user-block-middle">
+				<ul>
+					<li class="text-ico">
+						<div class="event-block-top">
+							<span>05.06.14</span>
+							<span>17:56</span>
+						</div>
+						<div class="event-block-middle">
+							<p>Я всегда советовался со своим котом, допустим если у меня был какой-то вопрос то я смотря ему в глаза а он мне, я задавал его в слух если он облизовал мою щеку меньше 2 раз то это означало "нет" а если больше 2 то соответственно "да" и он меня еще не раазу не подводил))</p>
+						</div>
+						<div class="event-block-bottom">		
+							<a href="#">Развернуть комметрарии</a>
+							<span>18</span>
+						</div>
+							<div class="event-block-hidden">
+								<div class="event-block-hidden-top scroll-pane">
+									<ul>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="event-block-hidden-bottom">
+									<form>
+										<input type="text" placeholder="Здесь вы можете оставить свой комментарий">
+										<input type="submit" value="Отправить">
+									</form>					
+								</div>
+							</div>
+												
+					</li>
+					<li class="img-ico">
+						<div class="event-block-top">
+							<span>05.06.14</span>
+							<span>17:56</span>
+						</div>
+						<div class="event-block-middle">
+							<p>Добавил новую фотографию в альбом «<a href="#">Выставки</a>»</p>
+							<img src="i/example3.jpg">
+						</div>
+						<div class="event-block-bottom">		
+							<a href="#">Развернуть комметрарии</a>
+							<span>18</span>
+						</div>
+							<div class="event-block-hidden">
+								<div class="event-block-hidden-top scroll-pane">
+									<ul>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="event-block-hidden-bottom">
+									<form>
+										<input type="text" placeholder="Здесь вы можете оставить свой комментарий">
+										<input type="submit" value="Отправить">
+									</form>					
+								</div>
+							</div>
+												
+					</li>
+					<li class="friend-ico">
+						<div class="event-block-top">
+							<span>05.06.14</span>
+							<span>17:56</span>
+						</div>
+						<div class="event-block-middle2">
+							<span><img src="i/father.jpg"></span>
+							<div class="event-block-middle2-right">
+								<p>Подружился с <a href="#">Петровом Петром Петровичем</a> из города <a href="#">Санкт-Петербург, Россия</a></p>
+								<div class="event-block-middle2-right-bottom">
+									<p>Развожу кроликов, барсиков и енотов</p>
+								</div>
+							</div>
+						</div>
+						<div class="event-block-bottom">		
+							<a href="#">Развернуть комметрарии</a>
+							<span>18</span>
+						</div>
+							<div class="event-block-hidden">
+								<div class="event-block-hidden-top scroll-pane">
+									<ul>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="event-block-hidden-bottom">
+									<form>
+										<input type="text" placeholder="Здесь вы можете оставить свой комментарий">
+										<input type="submit" value="Отправить">
+									</form>					
+								</div>
+							</div>
+												
+					</li>
+				</ul>
+				<ul>
+					<li class="text-ico">
+						<div class="event-block-top">
+							<span>05.06.14</span>
+							<span>17:56</span>
+						</div>
+						<div class="event-block-middle">
+							<p>У меня кастрированный тайчик 1, 5 года. Неделю назад подобрала на улице красавицу..тоже таечку - около 2 лет, откарантиниоись, подлечились..неделю , принюхались вроде, всё ничего, но..со вчерашненго дня войны не детские и ласкаю своего, что бы та, не видела и наооборот, у каждого свой лоток и миска, и читаю инет, как себя вести..так печально , если девочку пристраивать придётся, уже её полюбила, но мой кот явно ревнует, целый день сидел вчера в коробочке её, а когда она вечером присела..в ход хотели пойти зубы с обеих сторон, помогла только вода..неужели не примут друг друга?</p>
+						</div>
+						<div class="event-block-bottom">		
+							<a href="#">Развернуть комметрарии</a>
+							<span>18</span>
+						</div>
+							<div class="event-block-hidden">
+								<div class="event-block-hidden-top scroll-pane">
+									<ul>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="event-block-hidden-bottom">
+									<form>
+										<input type="text" placeholder="Здесь вы можете оставить свой комментарий">
+										<input type="submit" value="Отправить">
+									</form>					
+								</div>
+							</div>
+												
+					</li>
+					<li class="place-ico">
+						<div class="event-block-top">
+							<span>05.06.14</span>
+							<span>17:56</span>
+						</div>
+						<div class="event-block-middle">
+							<p>Будет участвовать в событие «<a href="#">Выставка кошек ЭКСПОКЕТ 2014</a>»</p>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.608679986169!2d30.282459799999998!3d59.93863529999999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631214c2c83ed%3A0x7728d6fc682c8f26!2z0JHQvtC70YzRiNC-0Lkg0L_RgNC-0YHQv9C10LrRgiDQki7Qni4sIDEwMywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCg0L7RgdGB0LjRjywgMTk5MDM0!5e0!3m2!1sru!2s!4v1413396239762" width="100%" height="164" frameborder="0" style="border:0"></iframe>
+							<p>Ленэкспо — выставочный комплекс в Санкт-Петербурге. Расположен на юго-западной оконечности Васильевского острова Адрес: Большой проспект В.О., 103, Санкт-Петербург, 199106</p>
+						</div>
+						<div class="event-block-bottom">		
+							<a href="#">Развернуть комметрарии</a>
+							<span>18</span>
+						</div>
+							<div class="event-block-hidden">
+								<div class="event-block-hidden-top scroll-pane">
+									<ul>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example1.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="event-block-hidden-top-left"><img src="i/example2.jpg"></a>					
+											<div class="event-block-hidden-top-right">
+												<a href="#">Дмитрий</a> 
+												<span>04.06.14</span>
+												<span>14:46</span>
+												<div class="cloud-small">
+													<p>Принцип восприятия непредвзято создает паллиативный интеллект, условно. Концепция ментально оспособляет закон внешнего мира.Сомнение раскладывает на элементы неоднозначный структурализм</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="event-block-hidden-bottom">
+									<form>
+										<input type="text" placeholder="Здесь вы можете оставить свой комментарий">
+										<input type="submit" value="Отправить">
+									</form>					
+								</div>
+							</div>
+												
+					</li>
+				</ul>
+				<span class="show-more-bt"><a href="#">Показать ещё ...</a></span>
+			</div>
+
+		</section>
+	<div class="hfooter"></div>
+	</section>
+	<footer class="footer">
+		<div class="footer-ins">
+			<span class="copy">Copyright petbook.com 2014</span>
+			<ul class="footer-ins-right">
+				<li><a href="#">О нас</a></li>
+				<li><a href="#">Пользовательское соглашение</a></li>
+				<li><a href="#">Правила</a></li>
+				<li><a href="#">Безопасность</a></li>
+				<li><a href="#">Сообщить о нарушениях</a></li>
+			</ul>
+		</div>	
+	</footer>			
+		
+</body>
+</html>
